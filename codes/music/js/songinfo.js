@@ -29,7 +29,7 @@ $color[#1ED761]
 $author[Playing!]
 $authorIcon[https://cdn.discordapp.com/attachments/889423777123938315/942487760797839370/2213-tune.png]
 $description[
-[$httpResult[title]\]($httpResult[url])
+$httpResult[title]
 ]
 $if[$getServerVar[isPaused]==false]
 $addButton[no;skip;Skip;primary;no;⏭;]
