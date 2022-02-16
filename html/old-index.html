@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+    <head>
+        <title>Vali </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="Vali " />
+    <meta property="og:image" content="https://media.discordapp.net/attachments/889423777123938315/895369293913554954/70796289424b88d3af4573c129ad0a5b.png?width=300&height=300"
+    />
+    <meta property="og:description" content="Just a small developer"
+    />
+    <meta name="theme-color" content="#0096ff">
+    <link rel="shortcut icon" type="image/png" href="https://media.discordapp.net/attachments/889423777123938315/889424108964700160/main.logo.png?width=670&height=670">
+        <style>
+                  
+                  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(315deg, #aaa9f0 6%, #08e42d 0%, #0794e6 74%, #e63b07 20%);
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #1DB954;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #5865F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #171515;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #FF5700;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #FF0000; 
+}
+.wrapper .button:nth-child(6):hover .icon{
+  background: #9147fe; 
+} 
+.wrapper .button:nth-child(7):hover .icon{
+  background: #66c0f4; 
+} 
+.wrapper .button:nth-child(8):hover .icon{
+  background: #1DA1F2; 
+} 
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #1DB954;
+}
+.wrapper .button:nth-child(2) span{
+  color: #5865F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #171515;
+}
+.wrapper .button:nth-child(4) span{
+  color: #FF5700;
+}
+.wrapper .button:nth-child(5) span{
+  color: #FF0000;
+}
+.wrapper .button:nth-child(6) span{
+  color: #9147fe;
+}
+.wrapper .button:nth-child(7) span{
+  color: #66c0f4;
+}
+.wrapper .button:nth-child(8) span{
+  color: #1DA1F2;
+}
+.container { 
+            font-size: .9rem;
+            font-size: 25px;
+            padding: .75rem 1.5rem;
+            border-radius: .5rem;
+}
+
+
+
+.botBtn {
+
+transform: translate(-50%, -50%);
+
+width: 200px;
+
+height: 60px;
+
+text-align: center;
+
+line-height: 60px;
+
+color: #fff;
+
+font-size: 24px;
+
+text-transform: uppercase;
+
+text-decoration: none;
+
+font-family: sans-serif;
+
+box-sizing: border-box;
+
+background: linear-gradient(90deg, #03a9f4, #f45c41, #ffeb3b);
+
+background-size: 400%;
+
+border-radius: 30px;
+
+z-index: 1;
+
+}
+
+
+
+.botBtn:hover {
+
+animation: animate 8s linear infinite;
+
+color: rgb(41, 62, 247);
+
+font-size: 30px;
+
+transition: 0.2s;
+
+}
+
+
+
+@keyframes animate {
+
+0% {
+
+    background-position: 0%;
+
+}
+
+
+
+100% {
+
+    background-position: 400%;
+
+}
+
+}
+
+
+
+.botBtn :before {
+
+content: '';
+
+position: absolute;
+
+top: -5%;
+
+left: -5%;
+
+right: -5%;
+
+bottom: -5%;
+
+z-index: -1;
+
+background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b);
+
+background-size: 400%;
+
+border-radius: 40px;
+
+opacity: 0;
+
+transition: 0.5s;
+
+}
+
+
+
+.botBtn:hover:before {
+
+filter: blur(20px);
+
+opacity: 1;
+
+animation: animate 8s linear infinite;
+
+}
+.botBtnPosition {
+            top: 470px;  
+            right: 560px;
+            position: absolute;
+			display: flex;
+            }
+            
+            
+            </style>
+    </head>
+    <body>
+        <br>
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+        <div class="container">
+            <span style="cursor:help"><h1 style="color:rgb(0, 100, 10);">Vali </h1></span>
+        </div>
+            <img src="https://media.discordapp.net/attachments/889423777123938315/889424108964700160/main.logo.png?width=300&height=300" alt="Vali's Avatar">
+            <div class="botBtnPosition">
+        <a href="https://discord.com/oauth2/authorize?client_id=835902929575215166&scope=bot%20applications.commands&permissions=8" class="botBtn">Invite Bot</a>
+        </div>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="wrapper">
+            <div class="button">
+                <div class="icon"><a href="https://open.spotify.com/user/mkngmq9pvi5krjmmuuzf8uulg?si=0741b048dc724e9a" target="_blank"><i class="fab fa-spotify"></i></a></div>
+                <span><a href="https://open.spotify.com/user/mkngmq9pvi5krjmmuuzf8uulg?si=0741b048dc724e9a" target="_blank">Spotify</a></span>
+            </div>
+            <div class="button">
+              <div class="icon"><a href="https://discord.com/users/773911690629742602" target="_blank"><i class="fab fa-discord"></i></a></div>
+              <span><a href="https://discord.com/users/773911690629742602" target="_blank">Discord</a></span>
+            </div>
+            <div class="button">
+              <div class="icon"><a href="https://github.com/DevVali" target="_blank"><i class="fab fa-github"></i></a></div>
+              <span><a href="https://github.com/DevVali" target="_blank">GitHub</a></span>
+            </div>
+            <div class="button">
+              <div class="icon"><a href="https://www.reddit.com/user/xvali789" target="_blank"><i class="fab fa-reddit"></i></a></div>
+              <span><a href="https://www.reddit.com/user/xvali789" target="_blank">Reddit</a></span>
+            </div>
+            <div class="button">
+              <div class="icon"><a href="https://www.youtube.com/channel/UC-0Sew1gcgKsuF74S10tCAA" target="_blank"><i class="fab fa-youtube"></i></a></div>
+              <span><a href="https://www.youtube.com/channel/UC-0Sew1gcgKsuF74S10tCAA" target="_blank">YouTube</a></span>
+            </div>
+            <div class="button">
+              <div class="icon"><a href="https://twitch.tv/xvali789" target="_blank"><i class="fab fa-twitch"></i></a></div>
+              <span><a href="https://twitch.tv/xvali789" target="_blank">Twitch</a></span>
+            </div>
+            <div class="button">
+              <div class="icon"><a href="https://steamcommunity.com/id/vidk25/" target="_blank"><i class="fab fa-steam"></i></a></div>
+              <span><a href="https://steamcommunity.com/id/vidk25/" target="_blank">Steam</a></span>
+            </div>
+            <div class="button">
+                <div class="icon"><a href="https://twitter.com/ejvali" target="_blank"><i class="fab fa-twitter"></i></a></div>
+                <span><a href="https://twitter.com/ejvali" target="_blank">Twitter</a></span>
+              </div>
+          </div>
+        <a href="https://discord.gg/dsTTyA7MuQ" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/886548261748502538?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
+        <br><p><b>Hello, the name's Vali</b><br>Welcome to my personal website, here you can find a list of my projects!</p>
+        <br><h2><b>Who am I?</b></h2><br><p>• Moderator @ Scratch Wars<br>➣ <a href="https://discord.gg/csCPNS9gmZ" style="color:#000">https://discord.gg/csCPNS9gmZ<a><br>➣ <a href="https://scratchwars.com" style="color:#000">https://scratchwars.com<a><br><br>• Admin @ Random Developers<br>➣ <a href="https://discord.gg/yjfmFm4BmJ" style="color:#000">https://discord.gg/yjfmFm4BmJ<a><br><br>• Developer @ IO-504<br>➣ <a href="https://discord.gg/cdsFtv5hYM" style="color:#000">https://discord.gg/cdsFtv5hYM<a><br>➣ <a href="https://dsc.gg/io-504" style="color:#000">https:/dsc.gg/io-504<a><br><br>• Founder @ DevWorld<br>➣ <a href="https://dsc.gg/dev-world" style="color:#000">https://dsc.gg/dev-world<a><br><br>
+ <!-- Projects --></p><br> 
+ <!-- Projects -->
+ <br><br><h1 style="color:cyan">Projects</h1>
+ <h2 style="color:#00ffae">Discord Bots </h2>
+ <br>
+ <h1 style="color:#b4fd08;">IO-504 </h1>
+<center>
+ <img src="https://media.discordapp.net/attachments/836105270245457940/912356926099161118/io-504-1.png.png?width=300&height=300" alt="IO-504">
+<br><a href="https://discord.gg/cdsFtv5hYM" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/835877555898810408?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
+<br><a href="https://twitter.com/ejio_504" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/twitter/follow/ejio_504?color=%231da1f2&label=follow&logo=twitter&logoColor=white&style=flat" alt="Twitter" loading="lazy"></a>
+<br><a href="https://discord.com/oauth2/authorize?client_id=835902929575215166&scope=bot%20applications.commands&permissions=8" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/badge/dynamic/json?&label=invite&color=235865F2&logo=discord&logoColor=white&url=https://devvali.github.io&query=https://devvali.github.io" alt="Invite" loading="lazy"></a>
+ <!-- -->
+</center>
+ <br><br><h2 style="color:#00ffae">Communities </h2>
+<center>
+ <br>
+ <h1 style="color:#b4fd08;">DevWorld </h1>
+ <img src="https://media.discordapp.net/attachments/889423777123938315/912373022265061376/dev_world-origo.png?width=300&height=300" alt="DevWorld">
+<br><a href="https://discord.gg/y2suthknsN" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/864524372005224449?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
+ </center>
+ <center>
+  <br>
+  <h1 style="color:#b4fd08;">Vali's Lounge </h1>
+  <img src="https://media.discordapp.net/attachments/889423777123938315/889424108964700160/main.logo.png?width=300&height=300" alt="Vali's Lounge">
+ <br><a href="https://discord.gg/dsTTyA7MuQ" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/886548261748502538?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a>
+ <br><a href="https://reddit.com/r/DevVali/" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/badge/dynamic/json?&label=reddit&color=FF5700&logo=reddit&logoColor=white&url=https://devvali.github.io&query=https://devvali.github.io" alt="Reddit" loading="lazy"></a>
+ <br><a href="https://twitter.com/ejvali" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/twitter/follow/ejvali?color=%231da1f2&label=follow&logo=twitter&logoColor=white&style=flat" alt="Twitter" loading="lazy"></a>
+  </center>
+  <br><br><br><h3 style="color:blue">All Projects, or just places where I am </h3>
+    <center><h4 style="color:crimson"><b>IO-504 <a href="https://discord.gg/cdsFtv5hYM" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/835877555898810408?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a><br>Developers World <a href="https://discord.gg/y2suthknsN" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/864524372005224449?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a><br>Random Developers <a href="https://discord.gg/yjfmFm4BmJ" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/832646611296976967?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a><br>ScratchWars <a href="https://discord.gg/csCPNS9gmZ" target="_blank" rel="noopener"><img height="20" src="https://img.shields.io/discord/673484716250497025?color=%235865F2&logo=discord&logoColor=white" alt="Discord" loading="lazy"></a></b></h4></center>
+    <br><br><h1 style="color:blue">Learn more About Me </h1>
+    <p><b>Discord:</b> Vali#0504<br><b>Timezone:</b> GMT +1<br><b>Country:</b> Slovakia<br><b>Hobbies:</b> I like to code stuffs<br><b>Pronoun(s):</b> <a href="https://devvali.github.io/html/pronouns" style="color:#000">Learn more</a><br><b>Languages:</b> Slovak, Czech, English<br><b>Programming languages:</b> HTML / CSS</p>
+      <br><br><h1 style="color:blue">Top Server </h1>
+      <p>Ah, did you get here? :3 Thank you so much for stopping by!
+      <br>..and also, here's top server: <a href="https://discord.gg/yjfmFm4BmJ" style="color:#000">Ready to join<a></p>
+ 
+
+        <br>
+        <br>
+        <script>
+            window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault()
+      })
+
+      console.log(`\`
+      `)
+        </script>
+        <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+            new Crate({
+                server: '886548261748502538', // Vali's Projects Index
+                channel: '886952099584294942' // #main-chat
+            })
+        </script>
+</div>
+    </body>
+</html>
