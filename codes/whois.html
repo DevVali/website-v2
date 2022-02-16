@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Whois">
+        <meta property="og:description" content="Get an advanced BDFD whois command">
+        <meta name="theme-color" content="#5865F2">
+        <title>
+            Codes | Whois
+        </title>
+        <style>
+            h1 {
+                color: #5865F2;
+                font-family: Verdana, sans-serif;
+            }
+
+            h3 {
+                color: #894EFF;
+                font-family: Helvetica, sans-serif;
+            }
+
+            p {
+                color: #ebecec;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            footer {
+                color: #ebecec;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            button {
+            height: 100px;
+            width: 100px;
+            height: 50px;
+            border-radius: 100px;
+            border: solid 5px;
+            margin-top: 8px;
+            margin-left: 2x;
+            margin-right: 2px;
+            }
+
+        /*scrolling*/
+        ::-webkit-scrollbar {
+        width: 7px;
+        }  
+
+        ::-webkit-scrollbar-track {
+        background-color: #141414;
+        border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #5865F2;
+        border-radius: 8px;
+        }
+        </style>
+    </head>
+    <body style="background-color: #141414; text-align: center;">
+        <h1>Whois</h1>
+        <h3>First code (1/1) | BDscript Unstable required.</h3>
+        <p>Credits of the code go to Fafa#8911 and vidk#3506</p>
+        <div>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code1" rows="35" cols="80" readonly></textarea>
+        <script>
+            document.getElementById("code1").value = 
+            
+`$nomention
+$embedSuppressErrors[Error;;88888;;;]
+$onlyIf[$guildID!=;This command only works on servers.]
+$ignoreTriggerCase
+$title[$username[$findUser[$message]]'s info;2]
+$description[<@$findUser[$message]>;2]
+$addField[Username:; $username[$findUser[$message;yes]] (Nickname: $nickname[$findUser[$message]]);yes;2]
+$addField[Discriminator:; #$discriminator[$findUser[$message;yes]];no;2]
+$addField[ID:; $findUser[$message;yes];no;2]
+$addField[Bot?; $replaceText[$replaceText[$checkCondition[$isBot[$findUser[$message;yes]]==true];true;Yes, $username[$findUser[$message;yes]] is a bot.;-1];false;No, $username[$findUser[$message;yes]] is not a bot.;-1];no;2]
+$addField[Admin?; $replaceText[$replaceText[$checkCondition[$isAdmin[$findUser[$message;yes]]==true];true;Server Admin;-1];false;Server Member;-1];yes;2]
+$addField[DM Status;$replaceText[$replaceText[$isUserDMEnabled[$findUser[$message]];true;Open;1];false;Close;1];no;2]
+$addField[Creation Date;$replaceText[$replaceText[$replaceText[$userJoinedDiscord[$findUser[$message];Monday 2th of January 2006 at 3:04 PM];1th;1st;1];2th;2nd;1];3th;3nd;1];no;2]
+$addField[Join Date;$replaceText[$replaceText[$replaceText[$userJoined[$findUser[$message];Monday 2th of January 2006 at 3:04 PM];1th;1st;1];2th;2nd;1];3th;3nd;1];no;2]
+$addField[Highest Role:; 
+<@&$highestRole[$findUser[$message;yes]]>]
+$color[$getRoleColor[$highestRole[$findUser[$message]]];2] 
+$addField[Lowest Role:; 
+<@&$lowestRole[$findUser[$message;yes]]>]
+$footer[Requested by $username[$authorID];2]
+$addTimestamp
+$thumbnail[$userAvatar[$findUser[$message]];2]
+$suppressErrors`
+            ;
+            </script><br>
+        <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy1()">Copy</button>
+        <script>
+            var code1 = document.getElementById("code1");
+
+            function copy1() {
+            navigator.clipboard.writeText(code1.value);
+            alert("Successfully copied the code to clipboard");
+            }
+        </script></div>
+        
+
+        <br><br><br><footer>Vali © 2022</footer>
+    </body>
+</html>
