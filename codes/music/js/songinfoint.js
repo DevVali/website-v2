@@ -17,7 +17,6 @@ $c[ Credits of the code go to Berk#3506 and vidk#2010]
 $c[ API by Almighty Neko#0121 ]
 
 $nomention
-$ephemeral
 
 $var[host;https://bdfd-music.YOUR-REPLIT-USERNAME.repl.co] $c[<=== REPLACE THE HOST WITH YOUR OWN URL] 
 $c[P.S. this is a url you entered in the uptimerobot.com dashboard, such as https://bdfd-music.your-replit-username.repl.co]
