@@ -62,12 +62,3 @@ code {
     background: #5865F2;
     border-radius: 8px;
 }
-
-svg#freepik_stories-oops-404-error-with-a-broken-robot:not(.animated) .animable {
-  opacity: 0;
-}
-
-svg#freepik_stories-oops-404-error-with-a-broken-robot.animated #freepik--oops--inject-19 {
-  animation: 3s Infinite linear shake;
-  animation-delay: 2s;
-}
