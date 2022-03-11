@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Theme">
+        <meta property="og:description" content="Dark and Light Mode application">
+        <meta name="theme-color" content="#5865F2">
+        <title>
+            Codes | Theme
+        </title>
+        <style>
+            h1 {
+                color: #5865F2;
+                font-family: Verdana, sans-serif;
+            }
+
+            h3 {
+                color: #894EFF;
+                font-family: Helvetica, sans-serif;
+            }
+
+            p {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            footer {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            a {
+                color:#894EFF;
+                text-decoration: none;
+            }
+            a:hover {
+                color:#5865F2;
+            }
+
+            code {
+                font-family: Verdana, sans-serif;
+                background-color: #5865F2;
+                color: #141414;
+                padding: 2px;
+            }
+
+            button {
+            height: 100px;
+            width: 100px;
+            height: 50px;
+            border-radius: 100px;
+            border: solid 5px;
+            margin-top: 8px;
+            margin-left: 2x;
+            margin-right: 2px;
+            }
+
+        /*scrolling*/
+        ::-webkit-scrollbar {
+        width: 7px;
+        }  
+
+        ::-webkit-scrollbar-track {
+        background-color: #141414;
+        border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #5865F2;
+        border-radius: 8px;
+        }
+        </style>
+    </head>
+    <body style="background-color: #141414;color: #ebecec;text-align: center;" id="body">
+        <h1>Theme (Dark and Light Mode)</h1>
+        <h3>First code (1/3) | HTML</h3>
+        <p>Credits of the code go to vidk#2010</p>
+        <div>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code1" rows="23" cols="80" readonly></textarea>
+        <script src="/codes/js/theme1.js"></script>
+        <br>
+        <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy1()">Copy</button>
+        <script>
+            var code1 = document.getElementById("code1");
+
+            function copy1() {
+            navigator.clipboard.writeText(code1.value);
+            alert("Successfully copied the code to clipboard");
+            }
+        </script></div>
+        <br><br>
+        <h3>Second code (2/3) | JS</h3>
+        <div>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code2" rows="71" cols="80" readonly></textarea>
+        <script src="/codes/js/theme2.js"></script>
+        <br>
+        <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy2()">Copy</button>
+        <script>
+            var code2 = document.getElementById("code2");
+
+            function copy2() {
+            navigator.clipboard.writeText(code2.value);
+            alert("Successfully copied the code to clipboard");
+            }
+        </script></div>
+        <br><br>
+        <h3>Third code (3/3) | Full code</h3>
+        <p>There is the full code, you can edit it as you want.</p>
+        <div>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code3" rows="97" cols="80" readonly></textarea>
+        <script src="/codes/js/theme3.js"></script>
+        <br>
+        <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy3()">Copy</button>
+        <script>
+            var code3 = document.getElementById("code3");
+
+            function copy3() {
+            navigator.clipboard.writeText(code3.value);
+            alert("Successfully copied the code to clipboard");
+            }
+        </script></div>
+        <br><br><h3>Preview</h3>
+
+        <br><button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="changeToLight();" id="light">Light Mode</button> <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="changeToDark();" id="dark">Dark Mode</button> 
+        <script>
+// The main JavaScript (JS) file
+// JavaScript (JS) Operations Below
+
+// Settings
+var theme = 'dark'; //sets the variable to its default theme, can be used 'light' or 'dark'
+
+// Default CSS styles
+document.getElementById('body').style.textAlign = 'center'; //sets the text align to center, you can delete it if you want
+if (theme === 'light') {
+  document.getElementById('body').style.background = '#dfdfdf'; //sets the background color to white
+  document.getElementById('body').style.color = '#141414'; //sets the text color to black
+  
+  //buttons settings
+  document.getElementById('light').style.opacity = '0.6';
+  document.getElementById('light').style.cursor = 'not-allowed';
+  document.getElementById('light').disabled = true;
+} else if (theme === 'dark') {
+  document.getElementById('body').style.background = '#141414'; //sets the background color to dark
+  document.getElementById('body').style.color = '#dfdfdf'; //sets the text color to white
+ 
+  //buttons settings
+  document.getElementById('dark').style.opacity = '0.6';
+  document.getElementById('dark').style.cursor = 'not-allowed';
+  document.getElementById('dark').disabled = true;
+} else {
+  alert('Oops, an error ocurred! Probably you just seted the theme variable to its bad value.');
+}
+
+// Now, the code
+function changeToDark () {
+  document.getElementById('body').style.background = '#141414'; //sets the background color to black
+  document.getElementById('body').style.color = '#dfdfdf'; //sets the text color to white
+  
+  //buttons settings
+  document.getElementById('light').style.opacity = '1.0';
+  document.getElementById('light').style.cursor = 'pointer';
+  document.getElementById('light').disabled = false;
+  document.getElementById('dark').style.opacity = '0.6';
+  document.getElementById('dark').style.cursor = 'not-allowed';
+  document.getElementById('dark').disabled = true;
+  
+  console.log('[i] Changed the theme to dark.'); 
+}
+function changeToLight() {
+  document.getElementById('body').style.background = '#dfdfdf'; //sets the background color to white
+  document.getElementById('body').style.color = '#141414'; //sets the text color to black
+  
+  //buttons settings
+  document.getElementById('dark').style.opacity = '1.0';
+  document.getElementById('dark').style.cursor = 'pointer';
+  document.getElementById('dark').disabled = false;
+  document.getElementById('light').style.opacity = '0.6';
+  document.getElementById('light').style.cursor = 'not-allowed';
+  document.getElementById('light').disabled = true;
+  
+  console.log('[i] Changed the theme to light.');
+}
+// This code is modified for the webpage
+
+// Copyright
+// Vali © 2022
+        </script>
+
+        <br><br><br><footer>Vali © 2022</footer>
+    </body>
+</html>
