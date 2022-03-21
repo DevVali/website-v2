@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="Leaderboard BDFD">
+        <meta property="og:description" content="BDFD leaderboard with pages">
+        <meta name="theme-color" content="#5865F2">
+        <title>
+            Codes | Leaderboard BDFD
+        </title>
+        <style>
+            h1 {
+                color: #5865F2;
+                font-family: Verdana, sans-serif;
+            }
+
+            h3 {
+                color: #894EFF;
+                font-family: Helvetica, sans-serif;
+            }
+
+            p {
+                color: #ebecec;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            footer {
+                color: #ebecec;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+
+            button {
+            height: 100px;
+            width: 100px;
+            height: 50px;
+            border-radius: 100px;
+            border: solid 5px;
+            margin-top: 8px;
+            margin-left: 2x;
+            margin-right: 2px;
+            }
+
+        /*scrolling*/
+        ::-webkit-scrollbar {
+        width: 7px;
+        }  
+
+        ::-webkit-scrollbar-track {
+        background-color: #141414;
+        border-radius: 8px;
+        }
+        ::-webkit-scrollbar-thumb {
+        background: #5865F2;
+        border-radius: 8px;
+        }
+        </style>
+    </head>
+    <body style="background-color: #141414; text-align: center;">
+        <h1>Leaderboard BDFD</h1>
+        <h3>First code (1/1) | BDscript 2 required.</h3>
+        <p>Credits of the code go to vidk#2010</p>
+        <div>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code1" rows="177" cols="80" readonly></textarea>
+        <script src="/codes/js/leaderbdfd1.js"></script>
+        <br>
+        <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy1()">Copy</button>
+        <script>
+            var code1 = document.getElementById("code1");
+
+            function copy1() {
+            navigator.clipboard.writeText(code1.value);
+            alert("Successfully copied the code to clipboard");
+            }
+        </script></div>
+        
+
+        <br><br><br><footer>Vali © 2022</footer>
+    </body>
+</html>
