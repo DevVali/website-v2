@@ -40,66 +40,60 @@
             margin-left: 2x;
             margin-right: 2px;
             }
+            a {
+                color: #894EFF;
+                text-decoration: none;
+            }
+            a:hover {
+                color: #5865F2;
+            }
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: 140px;
+                background-color: #555;
+                color: #fff;
+                text-align: center;
+                border-radius: 6px;
+                padding: 5px;
+                position: absolute;
+                z-index: 1;
+                bottom: 150%;
+                left: 50%;
+                margin-left: -75px;
+                opacity: 0;
+                transition: opacity 0.3s;
+            }
 
-        /*scrolling*/
-        ::-webkit-scrollbar {
-        width: 7px;
-        }  
-
-        ::-webkit-scrollbar-track {
-        background-color: #141414;
-        border-radius: 8px;
-        }
-        ::-webkit-scrollbar-thumb {
-        background: #5865F2;
-        border-radius: 8px;
-        }
-
-        a {
-            color:#894EFF;
-            text-decoration: none;
-        }
-        a:hover {
-            color:#5865F2;
-        }
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 140px;
-  background-color: #555;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px;
-  position: absolute;
-  z-index: 1;
-  bottom: 150%;
-  left: 50%;
-  margin-left: -75px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
-}
+            .tooltip .tooltiptext::after {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                margin-left: -5px;
+                border-width: 5px;
+                border-style: solid;
+                border-color: #555 transparent transparent transparent;
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            ::-webkit-scrollbar {
+                width: 7px;
+            }
+            ::-webkit-scrollbar-track {
+                background-color: #141414;
+                border-radius: 8px;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #5865F2;
+                border-radius: 8px;
+            }
         </style>
     </head>
     <body style="background-color: #141414; text-align: center;">
@@ -107,6 +101,30 @@
 
         <br>
         <!--- Start of the blog ---> 
+        <div id="ioanniversary">
+        <div class="tooltip"><span class="tooltiptext" style="font-family: Verdana, sans-serif"><date>17.4.2022</date></span><h3>IOAnniversary</h3></div>
+        <p>First anniversary of IO-504 soon - <a href="http://ioanniversary.ga">click here</a>.</p>
+        <button style="background-color:#894EFF; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="ioanniversary()">Share</button>
+        <script>
+            function ioanniversary() {
+            navigator.clipboard.writeText("https://devvali.github.io/blog#ioanniversary")
+            alert("Successfully copied the URL to clipboard")
+            }
+            </script>
+            </div>
+        <br><br>
+        <div id="youtube">
+        <div class="tooltip"><span class="tooltiptext" style="font-family: Verdana, sans-serif"><date>17.4.2022</date></span><h3>YouTube</h3></div>
+        <p>Just uploaded my first video - <a href="https://youtu.be/6dsKkeUeRPY">click here</a>.</p>
+        <button style="background-color:#894EFF; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="youtube()">Share</button>
+        <script>
+            function youtube() {
+            navigator.clipboard.writeText("https://devvali.github.io/blog#youtube")
+            alert("Successfully copied the URL to clipboard")
+            }
+            </script>
+            </div>
+        <br><br>
         <div id="personalRoles">
         <div class="tooltip"><span class="tooltiptext" style="font-family: Verdana, sans-serif"><date>6.3.2022</date></span><h3>Personal Roles</h3></div>
         <p>see on my personal roles</p><img src="https://pbs.twimg.com/media/FNJS0nQXMAESq3p?format=png&name=small"><br>
