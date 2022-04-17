@@ -6,7 +6,7 @@ function keyDown(e) {
     keysPress = keysPress+e.keyCode;
 
     if (keysPress === konami) {
-        alert("You're just one step from gaining the reward.\nJust find the place where the reward is.")
+        alert("You're just one step from gaining the reward. Just find the place where the reward is.")
         console.info("ANNIVERSARY22")
     }
 }
