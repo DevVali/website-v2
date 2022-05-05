@@ -15,7 +15,6 @@ You're not available to claim the credits. While you use our template, you can c
 ## Resources
 Social Icons powered by [Font Awesome](https://fontawesome.com/). Hosted on [Github Pages](https://pages.github.com/). You can check out at [the source](https://github.com/DevVali/devvali.github.io). 
 <br>
-Header powered by aggelos 007#8877.
 
 ## Projects
 I own a few projects listed below.
