@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Music">
-        <meta property="og:description" content="An advanced music system for BDFD app">
+        <meta property="og:title" content="Staff">
+        <meta property="og:description" content="BDFD staff statuses with interactive setup">
         <meta name="theme-color" content="#5865F2">
         <title>
-            Codes | Music
+            Codes | Staff
         </title>
         <style>
             h1 {
@@ -68,15 +68,12 @@
         </style>
     </head>
     <body style="background-color: #141414; text-align: center;">
-        <h1>[UNLISTED] Music</h1>
-        <h2 style="color: #894EFF;font-family: Helvetica, sans-serif;">Warning</h2>
-        <p>The BDFD music system uses Lavalink.<br> Lavalink basically is against the YouTube API ToS.<br> If you violate the ToS of a Third Party API using a Discord Bot, your Bot is in risk to be banned,<br> due to the <b>Discord Developers Policy/ToS</b>.<br><br>You use the system at your own risk.</p><br>
-        <h3>Play track (1/9) | BDscript 2 required.</h3>
-        <p>Credits of the code go to Berk#3506 and vidk#0024<br>API by Almighty Neko#0121</p>
-        <p>The tutorial for a setup may be found <a href="https://bdfdmusic.glitch.me/">here</a>. <br>Variables needed may be found in the first comment.</p>
+        <h1>Staff Status</h1>
+        <h3>First code (1/8) | BDscript 2 required.</h3>
+        <p>Credits of the code go to vidk#0024<br>Make sure to add all the variables (list below, on the top of the first code).</p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code1" rows="60" cols="80" readonly></textarea>
-        <script src="/codes/js/music1.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code1" rows="65" cols="80" readonly></textarea>
+        <script src="/codes/js/staff1.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy1()">Copy</button>
         <script>
@@ -86,14 +83,12 @@
             navigator.clipboard.writeText(code1.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div>   
+        </script></div>
         <br><br>
-        <h3>Song info (2/9) | BDscript 2 required.</h3>
-        <p>For this and the one above is trigger up to you.<br>It can be added as a slash command too.</p>
-        
+        <h3>Second code (2/8) | BDscript 2 required.</h3>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code2" rows="62" cols="80" readonly></textarea>
-        <script src="/codes/js/music2.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code2" rows="22" cols="80" readonly></textarea>
+        <script src="/codes/js/staff2.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy2()">Copy</button>
         <script>
@@ -103,14 +98,13 @@
             navigator.clipboard.writeText(code2.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div>  
+        </script></div>
         <br><br>
-        <h3>Skip (3/9) | BDscript 2 required.</h3>
-        <p>Trigger: <code>$onInteraction[skip]</code></p>
-        
+        <h3>Third code (3/8) | BDscript required.</h3>
+        <p>Trigger: <code>$awaitedCommand[staffchannel;]</code></p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code3" rows="41" cols="80" readonly></textarea>
-        <script src="/codes/js/music3.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code3" rows="45" cols="80" readonly></textarea>
+        <script src="/codes/js/staff3.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy3()">Copy</button>
         <script>
@@ -120,14 +114,13 @@
             navigator.clipboard.writeText(code3.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div>  
+        </script></div>
         <br><br>
-        <h3>Song info (4/9) | BDscript 2 required.</h3>
-        <p><b>Make sure to add this code too, with the trigger below,<br> it's not the same as the song info above.</b><br>Trigger: <code>$onInteraction[songinfo]</code></p>
-        
+        <h3>Fourth code (4/8) | BDscript required.</h3>
+        <p>Trigger: <code>$awaitedCommand[staffrole1;]</code></p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code4" rows="52" cols="80" readonly></textarea>
-        <script src="/codes/js/music4.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code4" rows="47" cols="80" readonly></textarea>
+        <script src="/codes/js/staff4.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy4()">Copy</button>
         <script>
@@ -137,14 +130,13 @@
             navigator.clipboard.writeText(code4.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div>  
+        </script></div>
         <br><br>
-        <h3>End interaction (5/9) | BDscript 2 required.</h3>
-        <p>Note that this code will only end the interaction, not music.<br>Trigger: <code>$onInteraction[endmusic]</code></p>
-        
+        <h3>Fiveth code (5/8) | BDscript required.</h3>
+        <p>Credits of the code go to vidk#0024<br>Trigger: <code>$awaitedCommand[staffrole2;]</code></p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code5" rows="34" cols="80" readonly></textarea>
-        <script src="/codes/js/music5.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code5" rows="57" cols="80" readonly></textarea>
+        <script src="/codes/js/staff5.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy5()">Copy</button>
         <script>
@@ -154,14 +146,13 @@
             navigator.clipboard.writeText(code5.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div>  
+        </script></div>
         <br><br>
-        <h3>Pause (6/9) | BDscript 2 required.</h3>
-        <p><br>Trigger: <code>$onInteraction[pause]</code></p>
-        
+        <h3>Sixth code (6/8) | BDscript required.</h3>
+        <p>Credits of the code go to vidk#0024<br>Trigger: <code>$awaitedCommand[staffperm1;]</code></p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code6" rows="45" cols="80" readonly></textarea>
-        <script src="/codes/js/music6.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code6" rows="47" cols="80" readonly></textarea>
+        <script src="/codes/js/staff6.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy6()">Copy</button>
         <script>
@@ -171,14 +162,13 @@
             navigator.clipboard.writeText(code6.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div> 
+        </script></div>
         <br><br>
-        <h3>Resume (7/9) | BDscript 2 required.</h3>
-        <p><br>Trigger: <code>$onInteraction[resume]</code></p>
-        
+        <h3>Seventh code (7/8) | BDscript required.</h3>
+        <p>Credits of the code go to vidk#0024<br>Trigger: <code>$awaitedCommand[staffperm2;]</code></p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code7" rows="45" cols="80" readonly></textarea>
-        <script src="/codes/js/music7.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code7" rows="48" cols="80" readonly></textarea>
+        <script src="/codes/js/staff7.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy7()">Copy</button>
         <script>
@@ -190,12 +180,11 @@
             }
         </script></div>
         <br><br>
-        <h3>Turn Up Volume (8/9) | BDscript 2 required.</h3>
-        <p><br>Trigger: <code>$onInteraction[turnup]</code></p>
-        
+        <h3>Eight code (8/8) | BDscript required.</h3>
+        <p>Credits of the code go to vidk#0024<br>Trigger: <code>$awaitedCommand[staffconfirm;]</code></p>
         <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code8" rows="45" cols="80" readonly></textarea>
-        <script src="/codes/js/music8.js"></script>
+        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code8" rows="30" cols="80" readonly></textarea>
+        <script src="/codes/js/staff8.js"></script>
         <br>
         <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy8()">Copy</button>
         <script>
@@ -205,25 +194,9 @@
             navigator.clipboard.writeText(code8.value);
             alert("Successfully copied the code to clipboard");
             }
-        </script></div> 
-        <br><br>
-        <h3>Turn Down Volume (9/9) | BDscript 2 required.</h3>
-        <p><br>Trigger: <code>$onInteraction[turndown]</code></p>
+        </script></div>
         
-        <div>
-        <textarea style="margin-bottom: 10px; background-color:#5865F2" id="code9" rows="45" cols="80" readonly></textarea>
-        <script src="/codes/js/music9.js"></script>
-        <br>
-        <button style="background-color: #5865F2; color:black; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; cursor:pointer;" onclick="copy9()">Copy</button>
-        <script>
-            var code9 = document.getElementById("code9");
 
-            function copy9() {
-            navigator.clipboard.writeText(code9.value);
-            alert("Successfully copied the code to clipboard");
-            }
-        </script></div> 
-
-        <br><br><br><footer><p>Thanks for checking out this code, hope you enjoy it.</p>Vali © 2022</footer>
+        <br><br><br><footer>Vali © 2022</footer>
     </body>
 </html>
