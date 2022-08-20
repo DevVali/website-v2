@@ -1,6 +1,6 @@
 
 ## [Webpage v2](https://devvali.github.io)
-***The newest version is available at [github.com/DevVali/portfolio-v3](https://github.com/DevVali/portfolio-v3).***
+***The newest version is available at [github.com/DevVali/portfolio-v3](https://github.com/DevVali/ejvali-eu).***
 
 [![Stars](https://img.shields.io/github/stars/DevVali/devvali.github.io)](https://github.com/DevVali/devvali.github.io/stargazers)
 [![Patreon](https://img.shields.io/badge/donate-Patreon-orange.svg)](https://www.patreon.com/xvali)
