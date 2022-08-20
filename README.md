@@ -2,11 +2,10 @@
 ## [Webpage v2](https://devvali.github.io)
 ***The newest version is available at [github.com/DevVali/portfolio-v3](https://github.com/DevVali/ejvali-eu).***
 
-[![Stars](https://img.shields.io/github/stars/DevVali/devvali.github.io)](https://github.com/DevVali/devvali.github.io/stargazers)
-[![Patreon](https://img.shields.io/badge/donate-Patreon-orange.svg)](https://www.patreon.com/xvali)
+[![Stars](https://img.shields.io/github/stars/DevVali/portfolio-v2)](https://github.com/DevVali/portfolio-v2/stargazers)
 [![Discord](https://discordapp.com/api/guilds/886548261748502538/widget.png)](https://discord.gg/dsTTyA7MuQ) 
 
-Hey! welcome to [the source](https://github.com/DevVali/devvali.github.io) of my [website](https://devvali.github.io).
+Hey! welcome to [the source](https://github.com/DevVali/portfolio-v2) of my portfolio v2.
 
 ## The source
 Here is provided the source code, you can get an inspiration from it, or use it for the creation of your own webpage.
